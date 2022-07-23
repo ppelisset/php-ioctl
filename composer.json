@@ -1,0 +1,20 @@
+{
+  "name": "ppelisset/ioctl",
+  "description": "Port of Unix ioctl API with PHP FFI",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pierre Pélisset",
+      "email": "ppelisset@hotmail.fr"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-ffi": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ioctl\\": "src/"
+    }
+  }
+}
