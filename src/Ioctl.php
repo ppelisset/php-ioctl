@@ -22,7 +22,7 @@ final class Ioctl
         return self::has($attribute) ? $attribute : $defaultValue;
     }
 
-    public static function ioctl(int $fd, int $request, mixed ...$values): Ioctl
+    public static function ioctl(int $fd, int $request, mixed ...$values): mixed
     {
         return IoctlFunctions::ioctl($fd, $request, ...$values);
     }

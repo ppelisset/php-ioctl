@@ -6,7 +6,7 @@ use FFI;
 
 final class IoctlFunctions
 {
-    private static FFI $ffi;
+    private static ?FFI $ffi = null;
 
     public static function ioctl(int $fd, int $request, mixed ...$values)
     {
